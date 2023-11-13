@@ -4,7 +4,8 @@ body {
   flex-direction: column;
   height: 100vh;
   box-sizing: border-box;
-  color: #c5bbbc;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 section {
@@ -35,6 +36,8 @@ h3 {
 
 #image-section {
   padding: 16px 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -51,18 +54,84 @@ h3 {
 
 .hero h1 {
   color: white;
-  text-shadow: black 1px 0 10px;
+  text-shadow: #181c2d 1px 0 10px;
 }
 
 .hero h2 {
   display: flex;
   color: white;
-  text-shadow: black 1px 0 10px;
+  text-shadow: #181c2d 1px 0 10px;
   font-weight: 600;
   backdrop-filter: blur(1px);
 }
 
+#card-section {
+  padding: 16px 48px;
+}
+
 .card {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  padding: 48px;
+  box-sizing: inherit;
+  background-color: #c5bbbc;
+}
+
+.card img {
+  max-width: 100%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  color: #181c2d;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 36px;
+  place-items: center;
+  align-items: center;
+  width: 30%;
+}
+
+.item-container p {
+  color: #c5bbbc;
+}
+
+.image-container {
+  border-radius: 50%;
+  height: 288px;
+  width: 288px;
+  overflow: hidden;
+}
+
+.image-container img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  body {
+    height: 100%;
+  }
+
+  .items-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
