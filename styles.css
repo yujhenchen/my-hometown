@@ -153,17 +153,14 @@ h3 {
 
 .night-market:hover {
   background-image: url("images/food.jpg");
-  /* background-position: top 50% left 50%; */
 }
 
 .mountain:hover {
   background-image: url("images/hiking.jpg");
-  /* background-position: top 50% left 50%; */
 }
 
 .bar:hover {
   background-image: url("images/night.jpg");
-  /* background-position: top 50% left 50%; */
 }
 
 @media (max-width: 640px) {
