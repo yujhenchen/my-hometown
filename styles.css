@@ -40,6 +40,24 @@ h3 {
   flex-direction: column;
 }
 
+@keyframes shiny {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+#image-section h2 {
+  animation: shiny;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 .hero {
   display: flex;
   place-content: center;
@@ -66,16 +84,20 @@ h3 {
 }
 
 #card-section {
-  padding: 16px 48px;
+  padding: 56px;
 }
 
 .card {
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: flex;
   padding: 48px;
   box-sizing: inherit;
   background-color: #c5bbbc;
+}
+
+.card-img-container {
+  margin-right: 16px;
 }
 
 .card img {
@@ -112,13 +134,31 @@ h3 {
   height: 288px;
   width: 288px;
   overflow: hidden;
+  object-fit: cover;
 }
 
-.image-container img {
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.night-market {
+  background-image: url("images/night-market.jpg");
+}
+
+.mountain {
+  background-image: url("images/mountain.jpg");
+}
+
+.bar {
+  background-image: url("images/bar.jpg");
+}
+
+.night-market:hover {
+  background-image: url("");
+}
+
+.mountain:hover {
+  background-image: url("");
+}
+
+.bar:hover {
+  background-image: url("");
 }
 
 @media (max-width: 640px) {
